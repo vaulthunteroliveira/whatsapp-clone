@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body {
+  height: 100vh;
+}
+
+.el-pai {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  height: 100vh;
+}
+
+#btn-load {
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hide {
+  display: none;
+}
+
+h1 {
+  text-align: center;
+  font-family: sans-serif;
+  font-size: 10rem;
+  background: linear-gradient(to bottom, red, black);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+h2 {
+  background-color: black;
+  color: rgba(240, 248, 255, 0);
+}
+
+header {
+  height: 10vh;
+  background-color: black;
+} */
+
+main {
+  display: grid;
+  grid-template-rows: 10vh 10vh 70vh 10vh;
+  grid-template-columns: 33% 1fr;
+  grid-template-areas:
+    "header1        header2"
+    "search         msg-list"
+    "contacts-list  msg-list"
+    "contacts-list  msg-editor";
+}
+
+/* .column1 {
+  background-color: #0ecc0e;
+  grid-area: column1;
+}
+
+.column2 {
+  grid-area: column2;
+} */
+
+.header1 {
+  grid-area: header1;
+  background-color: #bd17df;
+}
+
+.header2 {
+  grid-area: header2;
+  background-color: #0ecc0e;
+}
+
+.search {
+  grid-area: search;
+  background-color: #1d6bdf;
+}
+
+.chat-list {
+  grid-area: contacts-list;
+  background-color: orangered;
+}
+
+.message-list {
+  grid-area: msg-list;
+  background-color: #5be9e9;
+}
+footer {
+  grid-area: msg-editor;
+  background-color: #d42993;
+}

@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<!-- saved from url=(0033)http://127.0.0.1:5500/index.html# -->
+<html lang="pt-br"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Oliveira</title>
+    
+    
+    
+  <link rel="stylesheet" href="./Alex Oliveira_files/main.css"><link rel="icon" href="http://127.0.0.1:5500/imagens/alex.ico"><link href="./Alex Oliveira_files/css2" rel="stylesheet"></head>
+  <body>
+    <main class="container">
+      <header class="top-bar">
+        <a href="http://127.0.0.1:5500/index.html#" rel="noopener noreferrer">
+          <div class="logo">AO</div>
+        </a>
+        <ul>
+          <li><a href="http://127.0.0.1:5500/index.html#stack">Tecnologias</a></li>
+          <li><a href="http://127.0.0.1:5500/index.html#contato">Sobre</a></li>
+          <li><a href="http://127.0.0.1:5500/index.html#footer">Contato</a></li>
+        </ul>
+      </header>
+      <h2 class="big-text">Alex Oliveira</h2>
+    </main>
+    <section id="stack">
+      <header style="text-align: center">
+        <h2 style="position: relative">Minhas tecnologias preferidas</h2>
+        <p>
+          Na seção a seguir eu mostro algumas das tecnologias que eu costumo
+          trabalhar.
+        </p>
+        <br>
+      </header>
+      <br>
+      <br>
+      <br>
+      <br>
+      <div class="row">
+        <img src="./Alex Oliveira_files/java_original_wordmark_logo_icon_146459.png" alt="">
+        <img src="./Alex Oliveira_files/git_original_wordmark_logo_icon_146510.png" alt="">
+        <img src="./Alex Oliveira_files/linux_original_logo_icon_146433.png" alt="">
+        <img src="./Alex Oliveira_files/oracle_original_logo_icon_146401.png" alt="">
+      </div>
+      <br>
+      <br>
+      <div class="row">
+        <img src="./Alex Oliveira_files/nodejs_original_wordmark_logo_icon_146412.png" alt="">
+        <img src="./Alex Oliveira_files/docker_original_wordmark_logo_icon_146557.png" alt="">
+        <img src="./Alex Oliveira_files/file_type_angular_icon_130754.png" alt="">
+        <img src="./Alex Oliveira_files/javascript_original_logo_icon_146455.png" alt="">
+      </div>
+      <br>
+      <br>
+      <div class="row">
+        <img src="./Alex Oliveira_files/bootstrap_plain_wordmark_logo_icon_146620.png" alt="">
+        <img src="./Alex Oliveira_files/html_original_wordmark_logo_icon_146478.png" alt="">
+        <img src="./Alex Oliveira_files/css_original_wordmark_logo_icon_146576.png" alt="">
+        <img src="./Alex Oliveira_files/gitlab_original_wordmark_logo_icon_146504.png" alt="">
+      </div>
+      <br>
+      <br>
+      <div class="row">
+        <img src="./Alex Oliveira_files/github_original_wordmark_logo_icon_146506.png" alt="">
+        <img src="./Alex Oliveira_files/file_type_ionic_icon_130522.png" alt="">
+        <img src="./Alex Oliveira_files/eclipse_94656.png" alt="">
+        <img src="./Alex Oliveira_files/file_type_vscode_icon_130084.png" alt="">
+      </div>
+    </section>
+
+    <section id="contato">
+      <div class="about-area">
+        <img src="./Alex Oliveira_files/alex.jpeg" alt="" class="photo" style="margin-right: 30px">
+        <div class="about-bio">
+          <h2>Sobre mim...</h2>
+          <p style="width: 33%; margin: 0.8rem auto">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptate
+            error unde explicabo nobis, soluta tempora amet qui inventore ut
+            modi dolor? Corrupti quos unde consectetur mollitia quod. Alias,
+            consequuntur nulla.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <footer id="footer">
+      <a href="https://www.linkedin.com/in/alex-oliveira-058336185/" target="_blank" rel="noopener noreferrer"><img src="./Alex Oliveira_files/linkedin.png" alt=""></a>
+
+      <a href="https://github.com/vaulthunteroliveira" target="_blank" rel="noopener noreferrer"><img src="./Alex Oliveira_files/github.png" alt=""></a>
+      <a href="http://127.0.0.1:5500/index.html#" class="btn-voltar" id="myBtn" style="display: none;">subir</a>
+    </footer>
+
+    <script src="./Alex Oliveira_files/script.js"></script>
+  <!-- Code injected by live-server -->
+<script type="text/javascript">
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>
