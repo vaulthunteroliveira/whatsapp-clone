@@ -114,6 +114,7 @@ main {
 .chat-list {
   grid-area: contacts-list;
   border-right: 0.005rem #ac96962f solid;
+  overflow-y: scroll;
 }
 
 .message-list {
@@ -156,7 +157,7 @@ footer {
   margin-left: 10px;
 }
 
-.chat-list > ul {
+.chat-list > ul > li {
   border-bottom: 0.0005rem #8080802a solid;
 }
 
